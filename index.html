@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rihanna Just Marked Her Return to the Stage in Summer’s Most Divisive Trend | Vogue</title>
+
+<!-- Body serif stand-in for "Adobe Garamond Pro". Vogue's own sans fallback is Helvetica,
+     so the headline/nav use the system Helvetica/Arial stack. -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    /* Vogue palette (from vogue-global brand tokens) */
+    --a3:#fff; --c1:#000; --c2:#1f1f1f; --c3:#636363; --c7:#e0e0e0; --c8:#f8f8f8; --b2:#d92f20;
+
+    /* Type stacks — mirror Vogue's CSS variables */
+    --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;        /* Vogue Avant Garde fallback */
+    --serif: 'EB Garamond', 'Adobe Garamond Pro', 'Times New Roman', Times, serif; /* body */
+    --content-w: 692px;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--a3);
+    color: var(--c1);
+    font-family: var(--serif);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ============ TOP NAV ============ */
+  .utility {
+    border-bottom: 1px solid var(--c7);
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+  .utility-inner {
+    max-width: 1300px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 24px;
+  }
+  .utility a { text-decoration: none; color: var(--c2); }
+  .utility .side { display: flex; gap: 20px; }
+  .utility .side a:last-child { font-weight: 700; }
+
+  .masthead {
+    position: sticky; top: 0; z-index: 60;
+    background: #fff; border-bottom: 1px solid var(--c7);
+  }
+  .masthead-inner {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
+    padding: 16px 24px 12px;
+  }
+  .m-left { justify-self: start; }
+  .m-right { justify-self: end; display: flex; gap: 18px; align-items: center; }
+  .icon-btn {
+    background: none; border: none; cursor: pointer; padding: 6px;
+    font-family: var(--sans); font-size: 12px; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--c1); display: inline-flex; gap: 8px; align-items: center;
+  }
+  .hamburger { flex-direction: column; gap: 5px; }
+  .hamburger span { width: 22px; height: 1.5px; background: var(--c1); display: block; }
+  .logo { justify-self: center; display: block; line-height: 0; }
+  .logo svg { width: clamp(120px, 26vw, 167px); height: auto; }
+
+  .primary-nav { border-bottom: 1px solid var(--c7); background: #fff; }
+  .primary-nav ul {
+    max-width: 1300px; margin: 0 auto; list-style: none;
+    display: flex; justify-content: center; gap: 26px;
+    padding: 12px 24px;
+    font-family: var(--sans); font-size: 13px; font-weight: 600;
+    letter-spacing: 1.7px; text-transform: uppercase;
+  }
+  .primary-nav a { text-decoration: none; color: var(--c1); white-space: nowrap; padding-bottom: 2px; }
+  .primary-nav a:hover { color: var(--c3); }
+
+  .drawer { display: none; border-bottom: 1px solid var(--c7); }
+  .drawer a {
+    display: block; padding: 14px 24px; text-decoration: none; color: var(--c1);
+    font-family: var(--sans); font-size: 14px; font-weight: 600; letter-spacing: 1.4px;
+    text-transform: uppercase; border-top: 1px solid var(--c7);
+  }
+
+  /* ============ ARTICLE ============ */
+  .article { max-width: var(--content-w); margin: 0 auto; padding: 0 24px; }
+
+  .rubric {
+    display: inline-block; margin: 40px 0 14px;
+    font-family: var(--sans); font-size: 13px; font-weight: 600;
+    letter-spacing: 1.7px; text-transform: uppercase; text-decoration: none; color: var(--c1);
+  }
+  .rubric:hover { text-decoration: underline; }
+
+  h1.hed {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: clamp(30px, 5.2vw, 42px);
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    margin: 0 0 22px;
+  }
+
+  .byline {
+    font-family: var(--sans); font-size: 13px; color: var(--c2);
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
+    margin-bottom: 26px;
+  }
+  .byline .pre { text-transform: uppercase; letter-spacing: 0.5px; color: var(--c2); }
+  .byline a { color: var(--c1); text-decoration: none; }
+  .byline a:hover { text-decoration: underline; }
+  .byline time { color: var(--c2); }
+
+  /* lead + inline figures */
+  figure { margin: 0 0 8px; }
+  figure img { width: 100%; height: auto; }
+  figcaption {
+    font-family: var(--sans); font-size: 12px; line-height: 1.5; color: var(--c2);
+    padding: 10px 0 26px; margin-bottom: 26px; border-bottom: 1px solid var(--c7);
+  }
+  figcaption .credit { color: var(--c3); }
+  figcaption .txt { display: block; margin-bottom: 3px; color: var(--c2); }
+
+  /* action bar */
+  .actionbar {
+    display: flex; align-items: center; gap: 10px;
+    padding: 4px 0 24px;
+  }
+  .actionbar button {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: none; border: none; cursor: pointer; padding: 6px 0;
+    font-family: var(--sans); font-size: 12px; letter-spacing: 0.5px; color: var(--c1);
+  }
+
+  /* body copy */
+  .body p {
+    font-family: var(--serif);
+    font-size: 20px; line-height: 1.5; margin: 0 0 24px; color: var(--c1);
+  }
+  .body a { color: var(--c2); text-decoration: underline; }
+  .body a:hover { color: var(--c1); }
+  .body em { font-style: italic; }
+
+  /* ============ LINK STACK ============ */
+  .linkstack { max-width: var(--content-w); margin: 44px auto 0; padding: 0 24px; }
+  .linkstack h2 {
+    font-family: var(--sans); font-weight: 700;
+    font-size: 22px; line-height: 1.2; letter-spacing: 0.2px;
+    padding-bottom: 16px; border-bottom: 2px solid var(--c1); margin: 0 0 8px;
+  }
+  .linkstack h2 em { font-family: var(--serif); font-style: italic; font-weight: 600; }
+  .linkstack ul { list-style: disc; padding-left: 20px; margin: 20px 0 0; }
+  .linkstack li { font-family: var(--serif); font-size: 18px; line-height: 1.5; margin-bottom: 14px; color: var(--c1); }
+  .linkstack a { color: var(--c2); text-decoration: underline; }
+  .linkstack em { font-style: italic; }
+
+  /* ============ TAGS ============ */
+  .tags { max-width: var(--content-w); margin: 40px auto; padding: 26px 24px 0; border-top: 1px solid var(--c7); }
+  .tags .label {
+    display: block; font-family: var(--sans); font-size: 13px; font-weight: 600;
+    letter-spacing: 1px; text-transform: uppercase; color: var(--c3); margin-bottom: 12px;
+  }
+  .tags a {
+    display: inline-block; font-family: var(--sans); font-size: 13px; color: var(--c1);
+    text-decoration: none; border: 1px solid var(--c7); border-radius: 2px;
+    padding: 8px 14px; margin: 0 8px 8px 0;
+  }
+  .tags a:hover { background: var(--c8); }
+
+  /* ============ FOOTER ============ */
+  footer { margin-top: 70px; border-top: 1px solid var(--c7); background: #fff; }
+  .footer-inner { max-width: 1300px; margin: 0 auto; padding: 50px 24px 30px; }
+  .footer-logo { display: flex; margin-bottom: 22px; line-height: 0; }
+  .footer-logo svg { width: 150px; height: auto; }
+  .footer-about {
+    font-family: var(--sans); font-size: 13px; color: var(--c2);
+    max-width: 520px; line-height: 1.5; margin-bottom: 28px;
+  }
+  .footer-cols {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px 20px;
+    font-family: var(--sans); font-size: 13px;
+  }
+  .footer-cols h4 { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; margin: 0 0 12px; }
+  .footer-cols a { display: block; color: var(--c3); text-decoration: none; padding: 5px 0; }
+  .footer-cols a:hover { color: var(--c1); }
+  .footer-legal {
+    max-width: 1300px; margin: 0 auto; padding: 24px;
+    font-family: var(--sans); font-size: 12px; color: var(--c3); line-height: 1.6;
+    border-top: 1px solid var(--c7);
+  }
+  .footer-legal em { font-style: italic; }
+  .footer-legal a { color: var(--c3); }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 900px) { .footer-cols { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 767px) {
+    .utility, .primary-nav { display: none; }
+    .masthead-inner { padding: 12px 20px 10px; }
+    .body p { font-size: 19px; }
+  }
+</style>
+<meta property="article:published_time" content="2026-07-14T15:34:21.951Z">
+<link rel='stylesheet' href='https://api.aedi.ai/common/css/v1/aedi-ad.css'>
+<script src='https://usapi.aedi.ai/common/js/v1/aedi-ad-us.js'></script>
+</head>
+<body>
+
+<!-- ===== Utility bar ===== -->
+<div class="utility">
+  <div class="utility-inner">
+    <div class="side">
+      <a href="#">Fashion</a><a href="#">Beauty</a><a href="#">Culture</a>
+    </div>
+    <div class="side">
+      <a href="#">Search</a><a href="#">Sign In</a><a href="#">Subscribe</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Masthead / Logo ===== -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="m-left">
+      <button class="icon-btn hamburger" aria-label="Menu"
+        onclick="var d=document.getElementById('drawer');d.style.display=(d.style.display==='block'?'none':'block');">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <a href="#" class="logo" aria-label="Vogue">
+      <svg xmlns="http://www.w3.org/2000/svg" width="167" height="43" fill="none" viewBox="0 0 167 43"><path fill="#000" d="M.072 1h14.48c.085 0 .058.434 0 .434h-2.988s-.836-.036-.588.434c.051.096 10.23 28.395 10.23 28.395s.177.488.32.542l9.055-28.44c.092-.281.414-.913-.143-.913h-3.273c-.058 0-.058-.434 0-.434h7.792c.057 0 .057.434 0 .434h-2.9c-.795-.016-.8.233-.943.651C31.042 2.315 18.52 42 18.52 42l-.106-.325C13.119 26.1 4.9 4.432 4.253 2.12c-.195-.693-.295-.67-.695-.669H.072c-.102 0-.09-.452 0-.452"/><path fill="#000" fill-rule="evenodd" d="M31 20.964C31 32.542 39.093 41.968 48.348 42c8.467.03 17.63-9.386 17.652-21.036C66.023 8.764 57.215.073 48.491 0 39.565-.073 31 9.77 31 20.964m17.507 20.713c-9.138-.01-10.158-9.112-10.158-20.928C38.349 9.508 40.498.32 48.435.323c8.536.004 10.213 9.569 10.213 20.426 0 11.24-1.63 20.937-10.14 20.928" clip-rule="evenodd"/><path fill="#000" d="M90.73 25.318h3.345s.622-.067.616.238v9.69c0 7.454-7.334 7.537-9.408 7.3-7.666-.88-7.827-16.913-7.865-21.125C77.314 9.977 79.088.01 86.802.406c9.161.47 11.556 13.766 11.703 14.362.305.11.308-.146.308-.146L98.83.116s-.063-.122-.243.047q-.097.092-.227.228C94.308 4.586 92.279.197 86.388.004c-7.256-.237-16.271 9.953-16.387 21.71-.116 11.83 7.552 20.947 15.935 21.27 4.546.175 4.448-1.106 10.056-2.867 3.43-1.077 5.045 1.264 5.171 2.235.217.146.236-.11.236-.11v-16.63c0-.33.452-.276.452-.276h3.091c.077 0 .077-.458 0-.458h-14.23c-.104 0-.104.44.018.44M165.783 1.345v14.72c0 .072-.291.09-.291 0s.273-14.303-12.999-14.303h-4.977c-.279 0-.446.05-.446.262v18.388c0 .172.174.265.438.265h1.663c7.898 0 7.262-7.879 7.262-7.969s.309-.072.309 0l.017 16.613c0 .072-.235.09-.235 0s-.182-8.212-7.534-8.212h-1.482c-.255 0-.438.094-.438.268v19.789c0 .138.169.266.446.267 1.113.003 3.98.012 4.776.013 14.263.036 14.071-15.184 14.071-15.256s.364-.072.364 0v15.765h-30.1c-.091 0-.082-.433 0-.433h3.008c.268 0 .441-.092.441-.266.001-3.432.005-38.92 0-39.216-.004-.253-.334-.27-.441-.27h-6.661s-.434.003-.434.252c-.001 2.79-.003 26.336-.001 29.687v.015c.016 8.303-6.403 11.01-11.021 11.088l-.007-.014c-5.432.028-15.194-.883-15.194-12.854 0 0-.024-27.238-.036-27.616-.018-.594-.759-.564-.759-.564l-3.189.006c-.099 0-.081-.432 0-.432h15.031c.081 0 .054.432 0 .432h-3.197s-.986-.057-.986.594l.018 31.433c0 4.594 2.616 8.665 8.312 8.57 4.439-.075 10.61-2.677 10.594-10.658-.005-.39-.001-26.726 0-29.687-.018-.23-.471-.252-.471-.252h-4.174c-.091 0-.074-.415.017-.415z"/></svg>
+    </a>
+    <div class="m-right">
+      <button class="icon-btn" aria-label="Search">Search</button>
+      <button class="icon-btn" aria-label="Account">Account</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Primary nav ===== -->
+<nav class="primary-nav" aria-label="Primary">
+  <ul>
+    <li><a href="#">Fashion</a></li>
+    <li><a href="#">Runway</a></li>
+    <li><a href="#">Shopping</a></li>
+    <li><a href="#">Beauty</a></li>
+    <li><a href="#">Culture</a></li>
+    <li><a href="#">Living</a></li>
+    <li><a href="#">Vogue Business</a></li>
+    <li><a href="#">Teen Vogue</a></li>
+  </ul>
+</nav>
+<div class="drawer" id="drawer">
+  <a href="#">Fashion</a><a href="#">Runway</a><a href="#">Shopping</a><a href="#">Beauty</a>
+  <a href="#">Culture</a><a href="#">Living</a><a href="#">Vogue Business</a><a href="#">Teen Vogue</a>
+</div>
+
+<!-- ===== Article ===== -->
+<main>
+  <article class="article main-content story">
+    <header class="content-header">
+      <a class="rubric" href="#">Trends</a>
+
+      <h1 class="hed">Rihanna Just Marked Her Return to the Stage in Summer’s Most Divisive Trend</h1>
+
+      <div class="byline">
+        <span><span class="pre">By</span> <a href="#">Olivia Allen</a></span>
+        <time datetime="2026-07-14">July 14, 2026</time>
+      </div>
+
+      <figure class="lead-asset">
+        <img src="https://assets.vogue.com/photos/6a564cfdc609148802b03cb2/master/w_1600,c_limit/RIHANNA_07-13-26.jpeg"
+             alt="Rihanna performing at Yankee Stadium in Saint Laurent capri pants." loading="eager" />
+        <figcaption><span class="credit">Courtesy of Saint Laurent.</span></figcaption>
+      </figure>
+    </header>
+
+    <div class="actionbar">
+      <button aria-label="Save this story">
+        <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.6 15.8 5 18.9V4h12v14.9l-5.6-3.1-.4-.2-.4.2Z" stroke="#000" stroke-width="1.4"/>
+        </svg>
+        Save this story
+      </button>
+    </div>
+
+    <!-- Body: paraphrased summary (Vogue's original copy is not reproduced verbatim) -->
+    <div class="body">
+      <p>Rihanna made a surprise return to the stage at Yankee Stadium, joining <a href="#">Jay-Z</a> during his 30th-anniversary tour—and she did it in a pair of Saint Laurent capri pants, one of summer’s most talked-about silhouettes.</p>
+
+      <figure>
+        <img src="https://assets.vogue.com/photos/6a564cfdc609148802b03cb2/master/w_1600,c_limit/RIHANNA_07-13-26.jpeg"
+             alt="Rihanna performing at Yankee Stadium in Saint Laurent capri pants." loading="lazy" />
+        <figcaption><span class="credit">Courtesy of Saint Laurent.</span></figcaption>
+      </figure>
+
+      <p>Cropped trousers have been resurfacing all season, championed by the likes of <a href="#">Bella Hadid</a>, <a href="#">Emily Ratajkowski</a>, and <a href="#">Beyoncé</a>. As <em>British Vogue</em> recently put it, in a summer of exposed everything, the calf has quietly become the season’s new focal point.</p>
+
+      <figure>
+        <img src="https://assets.vogue.com/photos/6a564cfdc609148802b03cb4/2:3/w_1280,c_limit/GettyImages-55997430.jpg"
+             alt="Rihanna at an MTV event in 2005." loading="lazy" />
+        <figcaption>
+          <span class="txt">Rihanna at an MTV event in 2005.</span>
+          <span class="credit">Evan Agostini/Getty Images</span>
+        </figcaption>
+      </figure>
+
+      <p>Rather than lean into the polished “clean-girl” version of the trend, Rihanna reached for three-quarter lengths and an off-the-shoulder top that recalled her <em>Music of the Sun</em> era—a reminder that capris were pop-royalty uniform long before the current revival.</p>
+    </div>
+  </article>
+
+  <!-- ===== Link stack ===== -->
+  <section class="linkstack">
+    <h2>More Great Fashion Stories from <em>Vogue</em></h2>
+    <ul>
+      <li><a href="#">Anne Hathaway Just Did a 180 on Maternity Style</a></li>
+      <li><a href="#">Zendaya Presents a Fashion Girl’s Guide to Sporty Summer Style</a></li>
+      <li><a href="#">From Moody Minimalism to Colorful Caftans, Revisiting the Olsen Twins’ Style Over the Years</a></li>
+      <li><a href="#"><em>Vogue</em> Staffers Predict the Summer Trends You’ll Be Seeing Everywhere</a></li>
+      <li>Listen to <a href="#"><em>The Run-Through with Vogue</em></a>, a weekly podcast on culture, politics, sports and—of course—fashion</li>
+    </ul>
+  </section>
+
+  <!-- ===== Tags ===== -->
+  <div class="tags">
+    <span class="label">Topics</span>
+    <a href="#">Rihanna</a>
+    <a href="#">Saint Laurent</a>
+  </div>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo" aria-label="Vogue">
+      <svg xmlns="http://www.w3.org/2000/svg" width="167" height="43" fill="none" viewBox="0 0 167 43"><path fill="#000" d="M.072 1h14.48c.085 0 .058.434 0 .434h-2.988s-.836-.036-.588.434c.051.096 10.23 28.395 10.23 28.395s.177.488.32.542l9.055-28.44c.092-.281.414-.913-.143-.913h-3.273c-.058 0-.058-.434 0-.434h7.792c.057 0 .057.434 0 .434h-2.9c-.795-.016-.8.233-.943.651C31.042 2.315 18.52 42 18.52 42l-.106-.325C13.119 26.1 4.9 4.432 4.253 2.12c-.195-.693-.295-.67-.695-.669H.072c-.102 0-.09-.452 0-.452"/><path fill="#000" fill-rule="evenodd" d="M31 20.964C31 32.542 39.093 41.968 48.348 42c8.467.03 17.63-9.386 17.652-21.036C66.023 8.764 57.215.073 48.491 0 39.565-.073 31 9.77 31 20.964m17.507 20.713c-9.138-.01-10.158-9.112-10.158-20.928C38.349 9.508 40.498.32 48.435.323c8.536.004 10.213 9.569 10.213 20.426 0 11.24-1.63 20.937-10.14 20.928" clip-rule="evenodd"/><path fill="#000" d="M90.73 25.318h3.345s.622-.067.616.238v9.69c0 7.454-7.334 7.537-9.408 7.3-7.666-.88-7.827-16.913-7.865-21.125C77.314 9.977 79.088.01 86.802.406c9.161.47 11.556 13.766 11.703 14.362.305.11.308-.146.308-.146L98.83.116s-.063-.122-.243.047q-.097.092-.227.228C94.308 4.586 92.279.197 86.388.004c-7.256-.237-16.271 9.953-16.387 21.71-.116 11.83 7.552 20.947 15.935 21.27 4.546.175 4.448-1.106 10.056-2.867 3.43-1.077 5.045 1.264 5.171 2.235.217.146.236-.11.236-.11v-16.63c0-.33.452-.276.452-.276h3.091c.077 0 .077-.458 0-.458h-14.23c-.104 0-.104.44.018.44M165.783 1.345v14.72c0 .072-.291.09-.291 0s.273-14.303-12.999-14.303h-4.977c-.279 0-.446.05-.446.262v18.388c0 .172.174.265.438.265h1.663c7.898 0 7.262-7.879 7.262-7.969s.309-.072.309 0l.017 16.613c0 .072-.235.09-.235 0s-.182-8.212-7.534-8.212h-1.482c-.255 0-.438.094-.438.268v19.789c0 .138.169.266.446.267 1.113.003 3.98.012 4.776.013 14.263.036 14.071-15.184 14.071-15.256s.364-.072.364 0v15.765h-30.1c-.091 0-.082-.433 0-.433h3.008c.268 0 .441-.092.441-.266.001-3.432.005-38.92 0-39.216-.004-.253-.334-.27-.441-.27h-6.661s-.434.003-.434.252c-.001 2.79-.003 26.336-.001 29.687v.015c.016 8.303-6.403 11.01-11.021 11.088l-.007-.014c-5.432.028-15.194-.883-15.194-12.854 0 0-.024-27.238-.036-27.616-.018-.594-.759-.564-.759-.564l-3.189.006c-.099 0-.081-.432 0-.432h15.031c.081 0 .054.432 0 .432h-3.197s-.986-.057-.986.594l.018 31.433c0 4.594 2.616 8.665 8.312 8.57 4.439-.075 10.61-2.677 10.594-10.658-.005-.39-.001-26.726 0-29.687-.018-.23-.471-.252-.471-.252h-4.174c-.091 0-.074-.415.017-.415z"/></svg>
+    </div>
+    <p class="footer-about">The latest fashion news, beauty coverage, celebrity style, fashion week updates, culture reviews, and videos on Vogue.com.</p>
+    <div class="footer-cols">
+      <div>
+        <h4>More From Vogue</h4>
+        <a href="#">Newsletter</a><a href="#">Contact us</a><a href="#">About Vogue</a><a href="#">Careers</a>
+      </div>
+      <div>
+        <h4>See More Stories</h4>
+        <a href="#">Fashion</a><a href="#">Beauty</a><a href="#">Culture</a><a href="#">Runway</a>
+      </div>
+      <div>
+        <h4>Shopping</h4>
+        <a href="#">Trends</a><a href="#">Street Style</a><a href="#">Magazine</a>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Pinterest</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-legal">
+    Educational, non-commercial layout reproduction for demonstration only — not affiliated with or endorsed by Condé Nast or <em>Vogue</em>. Article body text is paraphrased; headline, captions, and imagery reference the original for design fidelity.
+  </div>
+</footer>
+
+<script type='text/javascript'>
+    var API_KEY = '2650d6089a6d640c5e85b2b88265dc2b';
+    var aedi = new Aedi();
+    var aediWritingTime = document.querySelector('meta[property="article:published_time"]').content; 
+    var imgSelector = document.querySelectorAll('figure img');
+    aedi.adOpen(API_KEY, imgSelector, aediWritingTime);
+</script>
+
+</body>
+</html>
